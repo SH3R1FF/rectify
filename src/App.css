@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(43, 46, 67);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li,a,.container,.h-one{
+  text-decoration: none;
+  color: rgb(34, 142, 236);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content:space-between ;
+  align-items: center;
+  padding: 10px 15%;
+  background-color: rgb(29, 30, 40);
+}
+
+.nav_links{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-family: monospace;
+  font-weight:600;
+  font-size: 1rem
+
+}
+.nav_links li{
+  padding: 10px 15%;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease-in-out 0s ;
+}
+
+.nav_links li a:hover{
+  color: aliceblue;
+}
+
+.txtcontainer{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.h-one{
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  background-color :rgb(29, 30, 40); ;
+  border: none;
+  color: rgb(34, 142, 236);
+  padding: 8px;
+  resize:vertical;
+}
+
+.btn-primary{
+  background-color: rgb(29, 30, 40);
+  color: rgb(34, 142, 236);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  border:none;
+  transition: all 0.3s ease-in-out 0s;
+  font-family: monospace;
+}
+
+.btn-primary:hover{
+  background-color: rgb(34, 142, 236);
+  color: aliceblue;
+  cursor:pointer;
+}
+
+.btns{
+  margin-left: 21%
+}
+
+.aboutarea{
+  background-color: rgb(29, 30, 40);
+  width: 63%;
+  height: 400px;
+  color: rgb(34, 142, 236);
+  font-family: monospace;
+  font-size: 14px;
+  padding: 8px;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+}
+
+.footerbox{
+  background-color: rgb(29, 30, 40);
+  color:rgb(34, 142, 236);
+  width: 100vw;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;  
+  padding: 8px;
+
 }
